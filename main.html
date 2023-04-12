@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
 
-</body>
+<form method="POST">
+	
+	<label for="name">Name*</label>
+	<input type="text" id="name" required name="name" placeholder="Name">
+	
+		<label for="email">Email*</label>
+		<input type="text" id="email" placeholder="Email" name="Email" required>	
+	
+		<label>Gender *</label>
+	<div>
+		<label for="gender_m">Male</label><br>
+		<input type="radio" name="gender" id="gender_m" value="male" required>	
+	</div>
+	<div>
+		<label for="gender_f">Female</label>
+		<input type="radio" name="gender" id="gender_f" value="female" required>
+	</div>
 
+	<!-- <div id="cars"><label for="Car Brands">Car Brands</label> -->
+		<label for="cars">Car Brands*</label>
+		<select name="cars" id="cars" required>
+			<option value="" disabled selected>--Please choose an option--</option>
+			<option value="BMW">BMW</option>
+			<option value="Audi">Audi</option>
+			<option value="Mercedez">Mercedez</option>
+		</select>
+
+		<label for="age">Age*</label>
+		<input type="number" id="age" name="age" placeholder="Age" required>
+	
+		<label for="dob">DOB*</label>
+		<input type="date" id="dob" name="dob" required>
+	
+		<label for="tel">Phone Number</label>
+		<input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+	
+		<label for="password">Password*</label>
+		<input type="password" id="password" name="password" placeholder="Password" required>
+
+	<div>
+		<label for="tos">I agree to the TOS</label>
+		<input type="checkbox" id="tos" name="tos" required>
+	</div>
+	<button type="submit">Submit</button>
+</form>
+	
+</body>
 </html>
